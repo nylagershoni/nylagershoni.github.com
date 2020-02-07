@@ -5,6 +5,12 @@ body {
   margin: 0;
 }
 
+#mySketch {
+  width: 800px;
+  height: 250px;
+  padding-left: 200px;
+}
+
 html {
   box-sizing: border-box;
 }
