@@ -38,6 +38,7 @@ header h3 a{
 
 p {
   padding: 35px;
+  margin-right: 100px;
 }
 
 
@@ -48,7 +49,7 @@ p {
 
 .column {
   float: left;
-  width: 50%;
+  width: 100%;
   margin-bottom: 16px;
   padding: 0 10px;
 }
