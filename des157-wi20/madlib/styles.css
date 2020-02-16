@@ -1,0 +1,90 @@
+body {
+    background-image: url(images/lines.jpg);
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+form {
+    float: left;
+    width: 30%;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+h1, h2, h3 {
+    margin-left: 30px;
+    font-family: helvetica, sans-serif;
+    
+}
+
+h1 {
+    font-size: 100px;
+    color: palegreen;
+}
+
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: grey;
+    
+}
+
+label {
+    font-family: helvetica , sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: grey;
+}
+
+input {
+    display: block; 
+    margin-bottom: 24px;
+    font-size: 24px;
+    width: 95%;
+}
+
+.invisible { 
+    display: none;
+    transition: all 2s;
+}
+
+.visible {
+    display: block;
+    position: absolute;
+    top: 455px;
+    left: 500px;
+    width: 500px;
+    padding: 20px;
+    color: black;
+    background-color: palegreen;
+    font-family: helvetica , sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5em;
+    transition: all 2s;
+}
+
+footer {
+    display: inline;
+    padding: 1em;
+    position: relative;
+    top: 600px;
+    text-align: center;
+    background-color: #F9F7F5;
+  }
+
+footer a:hover {
+    background-color: palegreen;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+    padding: 2em;
+    margin: 20px;
+}
