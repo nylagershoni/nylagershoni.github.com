@@ -1,0 +1,75 @@
+
+body{
+    background-image: url(images/piggy.png);
+    background-size: 1000px 600px;
+    overflow-wrap: none;
+}
+
+h1{
+    color: palevioletred;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 50px;
+
+  
+
+
+}
+
+h2 {
+    color: palevioletred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 50px;
+}
+
+p {
+    margin: 50px;
+    padding-right: 100px;
+    padding-left: 50px;
+    line-height: 1.5em;
+}
+
+
+
+.column {
+    float: left;
+    width: 100%;
+    padding-bottom: 100;
+    margin-top: 20px;
+    
+  }
+
+  .card {
+    margin: 20px;
+    background-color: #FFF1F2 ;
+  }
+
+  .container {
+    margin-left: 50px;
+    padding-top: 25px;
+  }
+  
+  .container::after, .row::after {
+    width: 1200 px;
+    content: "";
+    clear: both;
+    display: table;
+    margin: 50px;
+  }
+
+  .button {
+    padding:5px;
+    background-color: #dcdcdc;
+    border: 1px solid #666;
+    color:#000;
+    text-decoration:none;
+  }
+
+  a:hover {
+    color:#f00;
+  }
+
+  a:active {
+    color:#f00;
+  }
+
