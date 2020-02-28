@@ -16,25 +16,30 @@ img{
 
 h1 {
   margin-left: 50px;
-  color: rgba(10, 76, 76, 1);
+  color: salmon;
 }
 
 h3 {
  text-align: center;
-  color: rgba(10, 76, 76, 1);
+  color: salmon;
 }
 
 li a{
-  color:rgba(10, 76, 76, 1);
+  color: salmon;
 }
 
 header h2{
   margin-left: 50px;
+  color: grey;
+}
+
+h2 {
+  color:salmon; 
 }
 
 header h3 a{
   text-align: center;
-  color: rgba(10, 76, 76, 1);
+  color: grey;
 }
 
 p {
