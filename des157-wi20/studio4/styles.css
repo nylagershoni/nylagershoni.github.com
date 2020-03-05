@@ -1,0 +1,176 @@
+
+@-webkit-keyframes swinging {
+    0% {
+      -webkit-transform: rotate(10deg);
+    }
+    50% {
+      -webkit-transform: rotate(-5deg)
+    }
+    100% {
+      -webkit-transform: rotate(10deg);
+    }
+  }
+  
+  @keyframes swinging {
+    0% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-5deg)
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .swinging{
+    -webkit-transform-origin: 50% 200px;
+    transform-origin: 50% 200px;
+    -webkit-animation: swinging .75s ease-in-out forwards infinite;
+    animation: swinging .75s ease-in-out forwards infinite;
+  }
+
+  #overlayTwo {
+    top: 0;
+    text-align: center;
+    margin: 25px;
+    padding: 50 px;
+    display: none;
+    position: absolute;
+    max-width: 50%;
+    min-height: 50%;
+    background-color: palegoldenrod;
+    background-repeat: no-repeat;
+  }
+  
+  #overlayThree {
+    top: 0;
+    text-align: center;
+    margin: 25px;
+    padding: 50 px;
+    display: none;
+    position: absolute;
+    max-width: 50%;
+    min-height: 50%;
+    background-color:palegoldenrod;
+    background-repeat: no-repeat;
+  }
+  
+  #overlay {
+    top: 0;
+    text-align: center;
+    margin: 25px;
+    padding: 50 px;
+    display: none;
+    position: absolute;
+    max-width: 50%;
+    min-height: 50%;
+    background-color:palegoldenrod;
+    background-repeat: no-repeat;
+  }
+
+body {
+    background-color: powderblue;
+    padding: 0 30px;
+    margin: auto;
+  }
+
+
+h1{
+    text-align: center;
+    color:  salmon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+h2{
+    font-size: 50pt;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: slategrey;
+}
+
+p{
+    font-size: 10pt;
+    line-height: 1.5em;
+   margin-bottom: 100px;
+   margin-left: 100px;
+   margin-right: 100px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: slategrey;
+   
+}
+
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: slategrey;
+}
+
+#items{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#items img {
+    height: 15vh;
+    width: auto;
+    transition: transform .2s;
+    padding: 10px;
+}
+#items img:hover {
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: salmon;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    padding: 24px;
+}
+
+footer a{
+    text-decoration: none;
+    text-align: center;
+    padding-right: 15px;
+    font-size: 10pt;
+}
+
+div p{
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+}
+
+@media only screen and (min-width: 769px){
+    #items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #items img {
+        height: 35vh;
+        width: auto;
+        transition: transform .2s;
+        padding: 30px;
+    }
+
+    h1{
+        font-size: 24pt;
+    }
+
+    h2{
+        font-size: 14pt;
+    }
+    
+    p, a{
+        font-size: 12pt;
+        line-height: 1.5em;
+    }
+}
