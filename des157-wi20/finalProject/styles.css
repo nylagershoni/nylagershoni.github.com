@@ -78,6 +78,7 @@ a{
     color: black;
     background-color: #f3f3f3;
     padding: 20px;
+    width: 100%;
     text-align: center;
   } 
 
@@ -92,7 +93,6 @@ a{
         border-radius: 4px;
         background-color: salmon;
         border: none;
-        color: #FFFFFF;
         text-align: center;
         font-size: 20px;
         padding: 20px;
@@ -155,13 +155,15 @@ a{
 
 /********* NAV BAR ***********/
 
+
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0px;
+    margin: 0px;
+    padding-right: 30px;
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
+    width: 100%;
   }
   
   li {
@@ -191,18 +193,21 @@ ul {
 #slider-wrapper {
 	width: 1000px;
 	height: 400px;
-    margin: 100px;
-    
+  margin: 100px;
 	position: relative;
-    overflow: hidden;
+  overflow: hidden;
     
 }
 
-ul,
-li {
+ul,li {
 	list-style-type: none;
 	margin: 0;
 	padding-top: 80;
+}
+
+ul {
+  margin:0;
+  padding: 0;
 }
 
 #slider-wrapper ul {
@@ -226,6 +231,7 @@ li {
     font-size: 30px;
     padding: 0px;
     margin: 0px;
+
 
 }
 
@@ -300,53 +306,58 @@ a{
         margin-bottom: 24px;
         font-size: 24px;
         width: 95%;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: salmon;
+        height: 30px;
+        font-size: 20px;
+
     }
-      
-
-      /*********** FLIP BOX ***********/
 
 
-       
-      .flip-box-inner {
-        position: relative;
-        width: 300px;
-        height: 100px;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    
-      }
-      
-      .flip-box:hover .flip-box-inner {
-        transform: rotateX(180deg);
-      }
-    
-      
-      .flip-box-front, .flip-box-back {
-        position: absolute;
-        width: 200px;
-        height: 100px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        
-      }
-      
-      .flip-box-front {
-        background-color: #bbb;
-        color:#22566E;
-      }
-      
-      .flip-box-back {
-        background-color:papayawhip;
-        color: #333;
-        transform: rotateX(180deg);
-      }
-
-
-      .flip-box h2 {
-          font-size: 20px;
-
-      }
-    
+    .visible {
+      display: block;
+      position: absolute;
+      height: 50px;
+      width: 300px;
+      top: 300px;
+      left: 600px;
+      padding: 20px;
+      color: white;
+      background-color: salmon;
+      font-family: helvetica , sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      line-height: 1.5em;
+      text-align: center;
+      transition: all 2s;
+  }
   
+  #stars {
+    width: 200px;
+    height: 100px;
+    margin: auto;
+  }
+      
+      /*********** WEB ***********/
+
+
+	.node {
+		cursor: pointer;
+	}
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+	}
+
+	.node text {
+	  font: 12px sans-serif;
+	}
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 2px;
+	}
 	
